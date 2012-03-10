@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<table width='80%' align='center' border='1'>
+<tr>
+  <td>Имя:</td>
+  <td align='center'><%= @user.name %></td>
+</tr>
+
+<tr>
+  <td>E-mail:</td>
+  <td align='center'><%= @user.email %></td>
+</tr>
+</table>
+
+<%= link_to 'Редактировать', edit_user_path(@user) %> |
+<%= link_to 'Назад', users_path %>
